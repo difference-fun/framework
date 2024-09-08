@@ -1,0 +1,56 @@
+{
+	"name" : "difference_fun/framework",
+	"description" : "Difference framework see https://difference.fun for detailed usage",
+	"type" : "library",
+	"keywords" : ["framework", "difference", "difference.fun", "fun","library", "language", "template", "engine"],
+	"homepage": "https://difference.fun",
+	"require" : {
+		"php": ">=8.0",
+		"ext-mbstring": "*",
+		"ext-json": "*",
+		"ext-pdo": "*",
+		"ext-posix": "*",
+		"ext-zend-opcache": "*",
+		"ext-openssl": "*",
+		"ext-readline": "*",
+		"ext-pcntl": "*",
+		"ext-zlib": "*",
+		"ext-zip": "*",
+		"ext-shmop": "*",
+		"difference_fun/autoload": ">=2024.05.25",
+		"difference_fun/boot": ">=2024.05.25",
+		"difference_fun/basic": ">=2024.05.25",
+		"difference_fun/event": ">=2024.05.25",
+		"difference_fun/config": ">=2024.05.25",
+		"difference_fun/host": ">=2024.05.25",
+		"difference_fun/middleware": ">=2024.05.25",
+		"difference_fun/node": ">=2024.05.25",
+		"difference_fun/output_filter": ">=2024.05.25",
+		"difference_fun/log": ">=2024.05.25",
+		"difference_fun/route": ">=2024.05.25",
+		"difference_fun/server": ">=2024.05.25",
+		"difference_fun/account": ">=2024.05.25",
+		"monolog/monolog" : "^3.6",
+		"defuse/php-encryption": "^2.3",
+		"spatie/fork": "^1.2.2"
+    },
+	"require-dev" : {
+		"pestphp/pest": "^2.34"
+	},
+	"config": {
+		"allow-plugins": {
+			"pestphp/pest-plugin": true
+		}
+	},
+	"license" : "MIT",
+	"authors" : [{
+			"name" : "Remco van der Velde",
+			"email" : "development@universeorange.com"
+		}
+	],
+	"autoload" : {
+		"psr-4" : {
+			"Difference\\Fun\\" : "src/"
+		}
+	}
+}
