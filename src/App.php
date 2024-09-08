@@ -49,7 +49,7 @@ use Difference\Fun\Exception\LocateException;
 class App extends Data {
     const NAMESPACE = __NAMESPACE__;
     const NAME = 'App';
-    const R3M = 'R3m';
+    const DIFFERENCE = 'Difference';
 
     const SCRIPT = 'script';
     const LINK = 'link';
@@ -83,7 +83,7 @@ class App extends Data {
     const DATABASE = App::NAMESPACE . '.' . Database::NAME;
 
     const AUTOLOAD_COMPOSER = App::NAMESPACE . '.' . 'Autoload' . '.' . 'Composer';
-    const AUTOLOAD_R3M = App::NAMESPACE . '.' . 'Autoload' . '.' . App::R3M;
+    const AUTOLOAD_DIFFERENCE = App::NAMESPACE . '.' . 'Autoload' . '.' . App::DIFFERENCE;
 
     const DIR = __DIR__ . DIRECTORY_SEPARATOR;
 
@@ -232,7 +232,7 @@ class App extends Data {
                             $object->config('project.dir.root') .
                             'vendor' .
                             $object->config('ds') .
-                            'r3m_io' .
+                            'difference_fun' .
                             $object->config('ds') .
                             'framework' .
                             $object->config('ds') .
@@ -301,7 +301,7 @@ class App extends Data {
                                 $object->config('project.dir.root') .
                                 'vendor' .
                                 $object->config('ds') .
-                                'r3m_io' .
+                                'difference_fun' .
                                 $object->config('ds') .
                                 'framework' .
                                 $object->config('ds') .
@@ -375,7 +375,7 @@ class App extends Data {
                         $object->config('project.dir.root') .
                         'vendor' .
                         $object->config('ds') .
-                        'r3m_io' .
+                        'difference_fun' .
                         $object->config('ds') .
                         'framework' .
                         $object->config('ds') .
@@ -1723,7 +1723,7 @@ class App extends Data {
                 if($load_part !== $prefix){
                     continue;
                 }
-                $part = str_replace('R3m\\Io\\', '', $load);
+                $part = str_replace('Difference\\Fun\\', '', $load);
                 $part = str_replace('\\', '/', $part);
                 $url = $this->config('framework.dir.source') . $part . $this->config('extension.php');
                 $ramdisk_dir = false;
@@ -1803,7 +1803,7 @@ class App extends Data {
                             d($load);
                             d($url);
                             //files with content __DIR__, __FILE__ cannot be cached
-                            //save to /tmp/r3m/io/.../Autoload/Disable.Cache.json
+                            //save to /tmp/difference/fun/.../Autoload/Disable.Cache.json
                             ddd('exclude_content');
                         } else {
                             file_put_contents($ramdisk_url, $read);

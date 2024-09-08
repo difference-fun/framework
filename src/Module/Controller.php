@@ -50,7 +50,7 @@ class Controller {
         if($object->config('framework.environment') == Config::MODE_DEVELOPMENT){
             $logger = $object->config('project.log.debug');
         }
-        $autoload = $object->data(App::AUTOLOAD_R3M);
+        $autoload = $object->data(App::AUTOLOAD_DIFFERENCE);
         if($read === null){
             $url = $object->config('controller.dir.data') . 'Config' . $object->config('extension.json');
             $read = $object->data_read($url);
@@ -772,7 +772,7 @@ class Controller {
                         "priority" => 10,
                         "command" => [],
                         "controller" => [
-                            "Package:R3m:Io:Output:Filter:Output:Filter:Comment:remove"
+                            "Package:Difference:Fun:Output:Filter:Output:Filter:Comment:remove"
                         ]
                     ],
                     "route" => "*",

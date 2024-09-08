@@ -15,6 +15,6 @@ use Difference\Fun\Module\Data;
 
 function function_autoload_prefix_prepend(Parse $parse, Data $data, $prefix='',$directory='', $extension=''){
     $object = $parse->object();
-    $autoload = $object->data(App::AUTOLOAD_R3M);
+    $autoload = $object->data(App::AUTOLOAD_DIFFERENCE);
     $autoload->prependPrefix($prefix, $directory, $extension);
 }

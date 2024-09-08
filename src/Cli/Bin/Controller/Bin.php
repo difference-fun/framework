@@ -27,7 +27,7 @@ class Bin extends Controller {
 
     const DEFAULT_NAME = 'app';
     const TARGET = '/usr/bin/';
-    const EXE = 'R3m.php';
+    const EXE = 'Difference.php';
     const BINARY = 'Binary';
 
     const INFO = '{{binary()}} bin                            | Creates binary';

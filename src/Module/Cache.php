@@ -99,7 +99,7 @@ class Cache {
     const FOUR_YEARS = 126144000;
     const FIVE_YEARS = 157680000;
 
-    const INF = 'INF'; //calling r3m.io cache:clear will remove all INF cache
+    const INF = 'INF'; //calling difference.fun cache:clear will remove all INF cache
 
     /**
      * @throws Exception

@@ -12,7 +12,7 @@ use Difference\Fun\Module\Parse;
 use Difference\Fun\Module\Data;
 use Difference\Fun\Config;
 
-function function_r3m_built(Parse $parse, Data $data){
-    return $parse->object()->config(Config::DATA_FRAMEWORK_BUILT);
+function function_difference_version(Parse $parse, Data $data){
+    return $parse->object()->config(Config::DATA_FRAMEWORK_VERSION);
 
 }

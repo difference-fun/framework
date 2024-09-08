@@ -1,5 +1,5 @@
 {{R3M}}
-R3m-framework version: {{r3m.version()}}, Built: {{r3m.built()}}
+Difference-framework version: {{difference.version()}}, Built: {{difference.built()}}
 
 Copyright (c) 2018-{{date('Y')}} Remco van der Velde
 {{$installation.directory = config('project.dir.root')}}

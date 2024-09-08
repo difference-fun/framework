@@ -4,7 +4,7 @@
 'method' => 'CLI'
 ])}}
 {{$route = info_all_add($route)}}
-Welcome to R3m.io                             {{terminal.color('blue')}}(c) Remco van der Velde {{terminal.color('green')}}({{config('framework.version')}}){{terminal.color('reset')}}
+Welcome to difference.fun                  {{terminal.color('blue')}}(c) Remco van der Velde {{terminal.color('green')}}({{config('framework.version')}}){{terminal.color('reset')}}
 
 {{$route = data.sort($route, [
 'info' => 'ASC'

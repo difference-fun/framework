@@ -45,7 +45,7 @@ class Data {
      * @return NULL|boolean|string
      *@example
      *
-     * cli: r3m test test2 test.csv
+     * cli: app test test2 test.csv
      * Data::parameter($object->data('request.input'), 'test2', -1)
      * App::parameter(App $object, 'test2', -1)
      *

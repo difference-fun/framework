@@ -341,7 +341,7 @@ class Build {
                 $config->data('project.dir.root') .
                 'vendor' .
                 $config->data('ds') .
-                'r3m_io' .
+                'difference_fun' .
                 $config->data('ds') .
                 'framework' .
                 $config->data('ds') .
@@ -1179,7 +1179,7 @@ class Build {
             if(empty($dir)){
                 throw new Exception('Cache dir empty in Build');
             }
-            $autoload = $this->object()->data(App::NAMESPACE . '.' . Autoload::NAME . '.' . App::R3M);
+            $autoload = $this->object()->data(App::NAMESPACE . '.' . Autoload::NAME . '.' . App::DIFFERENCE);
             if($autoload) {
                 $prefixList = $autoload->getPrefixList();
                 $autoload->unregister();

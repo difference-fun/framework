@@ -81,7 +81,7 @@ class Core
             $read = trim(File::read($url));
             return $read;
         }
-        return 'php Bin/R3m.php';
+        return 'php Bin/Difference.php';
 //        return null;
     }
 

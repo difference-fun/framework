@@ -40,7 +40,7 @@ function function_ramdisk_mount(Parse $parse, Data $data, $size='1G', $url='', $
     $uuid = $object->config('ramdisk.uuid');
     if($uuid){
         $command = Core::binary($object) .
-            ' r3m_io/node patch -class=System.Config.Ramdisk -uuid=' .
+            ' difference_fun/node patch -class=System.Config.Ramdisk -uuid=' .
             $uuid .
             ' -name="'.
             $name .

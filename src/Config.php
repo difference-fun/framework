@@ -50,7 +50,7 @@ class Config extends Data {
     const HOST = 'host';
     const VALUE_HOST = 'Host';
     const TEMP = 'temp';
-    const VALUE_TEMP = '/tmp/r3m/io/';
+    const VALUE_TEMP = '/tmp/difference/fun/';
     const CACHE = 'cache';
     const VALUE_CACHE = 'Cache';
     const SOURCE = 'Source';
@@ -70,7 +70,7 @@ class Config extends Data {
     const MODULE = 'module';
     const VALUE_MODULE = 'Module';
     const FRAMEWORK = 'framework';
-    const VALUE_FRAMEWORK = 'r3m_io/framework';
+    const VALUE_FRAMEWORK = 'difference_fun/framework';
     const ENVIRONMENT = 'environment';
     const VALUE_ENVIRONMENT = Config::MODE_INIT;
     const FUNCTION = 'function';
